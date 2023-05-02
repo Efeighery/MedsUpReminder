@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    tools:context="com.example.medsupapp.TextMaker">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill in the following fields to send a text message"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNo"
+        android:maxLength="10"
+        android:padding="15sp"
+        android:hint="Type number"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageContent"
+        android:lines="5"
+        android:hint="Type message"
+        android:layout_marginTop="26dp"
+        android:inputType="textMultiLine"
+        />
+
+
+    <Button
+        android:id="@+id/sendSMS"
+        android:layout_width="191dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Send Text"
+        android:textAllCaps="false"
+        android:textSize="30dp"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="198dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/messageContent"
+        android:layout_alignLeft="@+id/messageContent"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Exit"
+        android:textSize="30dp"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.medsupapp.EmailMaker">
+
+    <!--This page allows users to send emails to relatives confirming that they just took their medication for the day-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send email to: "
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <!--The receiver, subject and the body of the email must be filled in so that the email can be drafted up-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/emailAdd"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email Address Recipient"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject: "
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/emailSubject"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email Subject"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailContent"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Type your email"
+        android:lines="10"
+        android:gravity="start"
+        />
+
+    <!--Once you click for the button to format your email, you'll be taken to your Gmail, where said email will be take all of the content inside it and put it in a draft-->
+    <!--Reminder that, you'll be asked to sign into Gmail, but you'll only need to do that once -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="25dp"
+        android:text="Format email"
+        app:cornerRadius="20dp"
+        android:textSize="21sp"
+        android:backgroundTint="#4CAF50"
+        android:id="@+id/sendEmailBtn"
+        />
+
+    <Button
+        android:id="@+id/hoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="#4CAF50"
+        app:cornerRadius="20dp"
+        android:text="Return to HomePage"
+        android:textSize="21sp" />
+
+
+</LinearLayout>
