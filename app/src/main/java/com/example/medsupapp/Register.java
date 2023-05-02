@@ -135,6 +135,11 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             edPassword.requestFocus();
             return;
         }
+        if(age.length() < 0){
+            edAge.setError("Age has to be higher than 0!");
+            edAge.requestFocus();
+            return;
+        }
 
         // The auth object will be used to create the user account with the email and password as parameters
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
