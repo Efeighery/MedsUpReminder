@@ -156,4 +156,8 @@ public class DiagnosisDetails extends AppCompatActivity {
             }
         });
     }
+
+    public String toString(String diagNoteTitle, String diagNoteContent) {
+        return diagNoteContent+diagNoteTitle;
+    }
 }

@@ -158,4 +158,10 @@ public class ContactDetails extends AppCompatActivity {
             }
         });
     }
+
+    public String toString(String conNoteTitle, String conNoteContent) {
+
+        return conNoteTitle+conNoteContent;
+
+    }
 }

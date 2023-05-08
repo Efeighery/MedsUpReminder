@@ -152,4 +152,8 @@ public class MedicDetails extends AppCompatActivity {
             }
         });
     }
+
+    public String toString(String medicNoteTitle, String medicNoteContent) {
+        return medicNoteTitle+medicNoteContent;
+    }
 }

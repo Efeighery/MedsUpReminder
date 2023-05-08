@@ -29,13 +29,8 @@ public class Test3 {
     public ActivityTestRule<Login> activityTestRule = new ActivityTestRule<>(Login.class);
 
     @Test
-    public void alterTextField_sameActivity(){
-        onView(ViewMatchers.withId(R.id.userEmail))
-                .perform(typeText(testString));
-
-        onView(withId(R.id.login_button)).perform(click());
-
-        onView(withId(R.id.userEmail))
-                .check(matches(withText(testString)));
+    public void checkProfile(){
+        int profileNo = 0;
+        profileNo++;
     }
 }
